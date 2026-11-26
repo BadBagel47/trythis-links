@@ -339,7 +339,7 @@
           try {
             const host = new URL(url).hostname.replace(/^www\./, "");
             if (host === "youtube.com" || host === "youtu.be" || host === "m.youtube.com") return { key: "youtube", label: "YouTube" };
-            return { key: "link", label: host };
+            return { key: "link", label: "Website", host };
           } catch {
             return { key: "link", label: "Link" };
           }
@@ -347,7 +347,9 @@
 
         const handleOf = (url) => {
           const m = /youtube\.com\/(@[^/?#]+)/i.exec(url || "");
-          return m ? m[1] : platformOf(url).label;
+          if (m) return m[1];
+          const p = platformOf(url);
+          return p.host || p.label;
         };
 
         const initials = (name) =>

@@ -9,6 +9,11 @@
       "id": "science",
       "name": "Science & curiosities",
       "description": "How the world works, and the odd corners of it."
+    },
+    {
+      "id": "design",
+      "name": "Design & web",
+      "description": "Tools and references for making good-looking things on the web."
     }
   ],
   "links": [
@@ -17,35 +22,72 @@
       "url": "https://www.youtube.com/@EverydayAstronaut/videos",
       "group": "space",
       "note": "Rocket launches and spaceflight explained in real depth, from engines to orbits.",
-      "color": "#ff8a3d"
+      "color": "#ff8a3d",
+      "image": "assets/images/everyday-astronaut.webp"
     },
     {
       "name": "Astrum",
       "url": "https://www.youtube.com/@astrumspace/videos",
       "group": "space",
       "note": "Cinematic tours of planets, moons and the strangest places in the universe.",
-      "color": "#8b7dff"
+      "color": "#8b7dff",
+      "image": "assets/images/astrum.webp"
     },
     {
       "name": "Joe Scott",
       "url": "https://www.youtube.com/@joescott/videos",
       "group": "science",
       "note": "Curious deep dives into science, space and the future, with a dry sense of humour.",
-      "color": "#35c6c0"
+      "color": "#35c6c0",
+      "image": "assets/images/joe-scott.webp"
     },
     {
       "name": "Tom Scott",
       "url": "https://www.youtube.com/@TomScottGo/videos",
       "group": "science",
-      "note": "A decade of short videos about amazing places, odd facts and how things work.",
-      "color": "#ff5d6c"
+      "note": "Short videos about amazing places and odd facts, now back with a weekly road trip through England.",
+      "color": "#ff5d6c",
+      "image": "assets/images/tom-scott.webp"
     },
     {
       "name": "Astrum Earth",
       "url": "https://www.youtube.com/@AstrumEarth/videos",
       "group": "science",
       "note": "Our own planet's extremes: geology, wild places and natural phenomena.",
-      "color": "#4cc38a"
+      "color": "#4cc38a",
+      "image": "assets/images/astrum-earth.webp"
+    },
+    {
+      "name": "Material Design",
+      "url": "https://material.io/",
+      "group": "design",
+      "note": "Google's open design system: guidelines, components, colour and type tools, and icons.",
+      "color": "#a58cff",
+      "image": "assets/images/material-design.webp"
+    },
+    {
+      "name": "Modern Web Guidance",
+      "url": "https://developer.chrome.com/docs/modern-web-guidance",
+      "group": "design",
+      "note": "Chrome's vetted guides that teach AI coding agents modern web patterns, with browser support data.",
+      "color": "#34a853",
+      "image": "assets/images/modern-web-guidance.webp"
+    },
+    {
+      "name": "Refero Styles",
+      "url": "https://styles.refero.design/",
+      "group": "design",
+      "note": "Over 2,000 design systems pulled from real product sites, ready to copy as tokens or DESIGN.md.",
+      "color": "#ff7a59",
+      "image": "assets/images/refero-styles.webp"
+    },
+    {
+      "name": "21st.dev",
+      "url": "https://21st.dev/",
+      "group": "design",
+      "note": "Over 12,000 hand-made React components, templates and themes, ready to drop into your project.",
+      "color": "#2f6bff",
+      "image": "assets/images/21st-dev.webp"
     }
   ]
 }

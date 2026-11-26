@@ -22,7 +22,9 @@ Läs den här först i varje ny session, oavsett agent. Skriv så att någon uta
 - `index.html`: hela sidan (HTML, CSS och JS i en fil, inget byggsteg)
 - `links.json`: alla grupper och länkar. Sidan byggs från den här filen; nya länkar läggs till här.
 - `assets/fonts/`: Inter (lokalt, OFL-licens bredvid), samma fil som trythis.one
-- `.assetsignore`: det Cloudflare inte ska publicera (dokumentation m.m.)
+- `assets/images/`: kortbilder, hämtade med `tools/fetch-images.py` (kräver Pillow)
+- `.github/workflows/pages.yml`: publicerar bara sidans filer till GitHub Pages vid push till `main`
+- `.assetsignore`: det Cloudflare inte ska publicera (används först när F-002 tas upp igen)
 
 ## Beslut
 - **2026-11-26:** Sidan ligger på GitHub Pages medan den utvecklas. trythis.one och underdomänen ignoreras tills vidare (F-002 parkerad). Ägarens besked.
@@ -36,16 +38,18 @@ Läs den här först i varje ny session, oavsett agent. Skriv så att någon uta
 _Inget._
 
 ## Läget nu
-- Demodesign klar (F-001): mörkt tema som trythis.one, fem YouTube-kanaler i två grupper, kort med färgad cirkel, sökruta och gruppfilter (gruppen kan länkas med t.ex. `#space`). Provad i Chromium i dator- och mobilbredd utan konsolfel. Inte publicerad på någon adress än (F-002).
-- En förhandsvisning finns som privat Claude-artefakt för ägaren.
+- Sidan har nio länkar i tre grupper (Space, Science & curiosities, Design & web), kort med riktiga bilder, sökruta och gruppfilter (F-001, F-004). Provad i Chromium i dator- och mobilbredd utan konsolfel.
+- Bilderna hämtas med `tools/fetch-images.py` (kör den när nya länkar läggs till) och sparas i `assets/images/`.
+- Publicering på GitHub Pages (F-006) är uppsatt via `.github/workflows/pages.yml`. Väntar på att ägaren väljer "GitHub Actions" som källa under Settings → Pages. Adress: https://badbagel47.github.io/trythis-links/
 
 ## Nästa steg
-1. Ägaren tittar på demodesignen och ger synpunkter.
-2. Justera (F-001), hämta kanalbilder (F-004), sedan publicering (F-002).
+1. Ägaren slår på GitHub Pages (källa "GitHub Actions"); kontrollera sedan att körningen lyckas och att sidan syns.
+2. Nästa körningar: F-003 (snabbspara-knapp) och F-005 (senaste videon).
 
 ## Senaste ändringar
 | Datum | Agent | Vad |
 |---|---|---|
+| 2026-11-26 | Claude | F-001, F-004: nio länkar i tre grupper med riktiga bilder. F-006: GitHub Pages-workflow. |
 | 2026-11-26 | Claude | F-001: demodesign med fem kanaler i två grupper, ej publicerad. |
 | 2026-11-26 | Claude | Beslut: länksamling, först YouTube-kanaler. F-003–F-005 inlagda. |
 | 2026-11-26 | Claude | Repot uppsatt enligt agentreglerna v1.14: AGENTS.md, handoff och backlog. F-001 och F-002 inlagda. |
