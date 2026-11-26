@@ -26,8 +26,8 @@ Prioriterat för: en snygg första version så snabbt som möjligt, sedan enklar
   - https://material.io/ – Material Design: "Google's open design system: guidelines, components, colour and type tools, and icons."
   - https://developer.chrome.com/docs/modern-web-guidance – Modern Web Guidance: "Chrome's vetted guides that teach AI coding agents modern web patterns, with browser support data."
   - https://styles.refero.design/ – Refero Styles: "Over 2,000 design systems pulled from real product sites, ready to copy as tokens or DESIGN.md."
-  - https://21st.dev/ – 21st.dev: "A community library of polished React UI components to drop into your own project."
-  - Molnmiljön når inte sajterna (DNS blockerad); beskrivningarna bygger på webbsökning.
+  - https://21st.dev/ – 21st.dev: "Over 12,000 hand-made React components, templates and themes, ready to drop into your project."
+  - Beskrivningarna kontrollerade mot sajternas egna beskrivningar 2026-11-26. Alla fyra har en delningsbild (og:image) som kan användas som kortbild (F-004).
 - **Förslag på ny korttext för Tom Scott** (görs vid nästa körning): "Short videos about amazing places and odd facts, now back with a weekly road trip through England."
 - **Svar 2026-11-26:** länksamling, i första hand YouTube-kanaler (se Beslut i HANDOFF).
 - **Ägarens första länkar (2026-11-26):**
@@ -54,7 +54,7 @@ Prioriterat för: en snygg första version så snabbt som möjligt, sedan enklar
 
 ### F-004 Hämta kanalbild och namn automatiskt
 - **Prioritet:** Hög
-- **Vad:** Bild, namn och beskrivning hämtas från länkens förhandsinformation och sparas på sidan, så att besökarnas webbläsare inte kontaktar YouTube (inga kakor från tredje part). Molnmiljön når inte YouTube (proxy 403, 2026-11-26), så hämtningen görs av en GitHub Action eller efter en engångsåtgärd som tillåter YouTube i miljöns nätverk.
+- **Vad:** Bild, namn och beskrivning hämtas från länkens förhandsinformation och sparas på sidan, så att besökarnas webbläsare inte kontaktar YouTube (inga kakor från tredje part). Sedan ägaren ändrade nätverket 2026-11-26 når molnmiljön YouTube och de övriga länkarnas sajter, så agenten kan hämta och prova själv.
 - **Lag och regler:** kanalbilder och namn används som förhandsvisning med länk till källan, vilket är vanligt, men bilderna tillhör kanalerna. Ingen juridisk bedömning; ägaren kan välja att ta bort en bild på begäran.
 
 ### F-005 Senaste videon per kanal
@@ -67,7 +67,6 @@ Prioriterat för: en snygg första version så snabbt som möjligt, sedan enklar
   - Flödet svarar ibland med fel; behåll då senast kända video.
   - Miniatyrbilden laddas ner och sparas på sidan, så att besökarna inte kontaktar Google.
   - Rättat 2026-11-26: Tom Scott är tillbaka sedan mars 2026 med en veckoserie ("Tom Scott: England", först på Nebula, en vecka senare på YouTube), så flödet ger färska videor.
-  - Molnmiljön når inte YouTube, så agenten kan inte prova flödet härifrån.
 
 ## Klart
 _Inget ännu._

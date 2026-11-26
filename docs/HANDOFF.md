@@ -13,7 +13,7 @@ Läs den här först i varje ny session, oavsett agent. Skriv så att någon uta
   - `trythis.one` nås inte från miljön (proxy 403), så agenten kan inte kontrollera den publicerade sidan.
   - Repot `BadBagel47/trythis.one` gick att läsa (för design och publiceringssätt). Läsåtkomst till `BadBagel47/trythis-infra` nekades.
   - Agenten har ingen åtkomst till Cloudflare (DNS, Workers).
-  - YouTube (`www.youtube.com`, `yt3.ggpht.com`) nås inte från miljön (proxy 403), så kanalbilder kan inte hämtas härifrån (F-004).
+  - 2026-11-26 (senare): ägaren ändrade nätverket. YouTube, material.io, developer.chrome.com, styles.refero.design och 21st.dev nås nu. `trythis.one` svarar fortfarande 403, nu från Cloudflare själv (zonens skydd stoppar troligen molnagenter, samma som noterat i trythis.one-repot).
 
 ## Dokumentkarta
 - `AGENTS.md`: hänvisning till agentreglerna + projektregler
