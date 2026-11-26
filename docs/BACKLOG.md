@@ -22,6 +22,7 @@ Prioriterat för: en snygg första version så snabbt som möjligt, sedan enklar
 - **Prioritet:** Hög
 - **Status:** Demodesign klar 2026-11-26, väntar på ägarens synpunkter. Inte publicerad (F-002). Kanalerna visas med initialer i färgade cirklar tills riktiga kanalbilder hämtas (F-004).
 - **Vad:** En länksamling med grupper av länkar, först YouTube-kanaler, senare andra platser. Snygg, inte bara rena länkar: varje länk visas som ett kort (bild, namn, ägarens egen kommentar), grupperat i sektioner, med sökruta och filtrering på grupp. Alla länkar ligger i en enda lättläst listfil som sidan byggs från. Allt utan ramverk, som trythis.one. Webbgrunderna i agentreglernas `WEB.md` ingår från start.
+- **Förslag på ny korttext för Tom Scott** (görs vid nästa körning): "Short videos about amazing places and odd facts, now back with a weekly road trip through England."
 - **Svar 2026-11-26:** länksamling, i första hand YouTube-kanaler (se Beslut i HANDOFF).
 - **Ägarens första länkar (2026-11-26):**
   - https://www.youtube.com/@EverydayAstronaut/videos
@@ -59,7 +60,7 @@ Prioriterat för: en snygg första version så snabbt som möjligt, sedan enklar
   - Flödet tar med Shorts. Ett inofficiellt flöde för bara vanliga videor finns (`playlist_id=UULF…`), men det kan sluta fungera utan förvarning.
   - Flödet svarar ibland med fel; behåll då senast kända video.
   - Miniatyrbilden laddas ner och sparas på sidan, så att besökarna inte kontaktar Google.
-  - Tom Scott laddar sällan upp nya videor sedan 2024, så hans senaste video kan vara gammal.
+  - Rättat 2026-11-26: Tom Scott är tillbaka sedan mars 2026 med en veckoserie ("Tom Scott: England", först på Nebula, en vecka senare på YouTube), så flödet ger färska videor.
   - Molnmiljön når inte YouTube, så agenten kan inte prova flödet härifrån.
 
 ## Klart
