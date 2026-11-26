@@ -1,0 +1,51 @@
+{
+  "groups": [
+    {
+      "id": "space",
+      "name": "Space",
+      "description": "Rockets, planets and the far edges of the universe."
+    },
+    {
+      "id": "science",
+      "name": "Science & curiosities",
+      "description": "How the world works, and the odd corners of it."
+    }
+  ],
+  "links": [
+    {
+      "name": "Everyday Astronaut",
+      "url": "https://www.youtube.com/@EverydayAstronaut/videos",
+      "group": "space",
+      "note": "Rocket launches and spaceflight explained in real depth, from engines to orbits.",
+      "color": "#ff8a3d"
+    },
+    {
+      "name": "Astrum",
+      "url": "https://www.youtube.com/@astrumspace/videos",
+      "group": "space",
+      "note": "Cinematic tours of planets, moons and the strangest places in the universe.",
+      "color": "#8b7dff"
+    },
+    {
+      "name": "Joe Scott",
+      "url": "https://www.youtube.com/@joescott/videos",
+      "group": "science",
+      "note": "Curious deep dives into science, space and the future, with a dry sense of humour.",
+      "color": "#35c6c0"
+    },
+    {
+      "name": "Tom Scott",
+      "url": "https://www.youtube.com/@TomScottGo/videos",
+      "group": "science",
+      "note": "A decade of short videos about amazing places, odd facts and how things work.",
+      "color": "#ff5d6c"
+    },
+    {
+      "name": "Astrum Earth",
+      "url": "https://www.youtube.com/@AstrumEarth/videos",
+      "group": "science",
+      "note": "Our own planet's extremes: geology, wild places and natural phenomena.",
+      "color": "#4cc38a"
+    }
+  ]
+}

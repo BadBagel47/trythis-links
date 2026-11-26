@@ -6,8 +6,8 @@ ID: `B-###` buggar · `F-###` funktioner · `D-###` planering/design. En gemensa
 Ögonblicksbild, ersätts vid varje nytt förslag.
 
 Prioriterat för: en snygg första version så snabbt som möjligt, sedan enklare påfyllning
-- **A** – stark modell, medelnivå – Första versionen med kanalkort
-  - F-001 – Bygg sidan: grupper med kort för varje kanal, sökruta och grupper att filtrera på
+- **A** – stark modell, medelnivå – Justera demodesignen och hämta kanalbilder – väntar på ägarens synpunkter
+  - F-001 – Ändringar efter ägarens synpunkter på demodesignen
   - F-004 – Kanalbild, namn och beskrivning hämtas automatiskt från länken och sparas på sidan
 - **B** – standardmodell, medelnivå – Publicering på underdomänen – bygger på A
   - F-002 – Förbered publicering via Cloudflare Workers och ge ägaren stegen för engångsåtgärden
@@ -20,7 +20,7 @@ Prioriterat för: en snygg första version så snabbt som möjligt, sedan enklar
 
 ### F-001 Länksida: första versionen
 - **Prioritet:** Hög
-- **Status:** Pågår 2026-11-26 (Claude, gren `claude/laughing-keller-0r00gv`) – demodesign först, på ägarens begäran
+- **Status:** Demodesign klar 2026-11-26, väntar på ägarens synpunkter. Inte publicerad (F-002). Kanalerna visas med initialer i färgade cirklar tills riktiga kanalbilder hämtas (F-004).
 - **Vad:** En länksamling med grupper av länkar, först YouTube-kanaler, senare andra platser. Snygg, inte bara rena länkar: varje länk visas som ett kort (bild, namn, ägarens egen kommentar), grupperat i sektioner, med sökruta och filtrering på grupp. Alla länkar ligger i en enda lättläst listfil som sidan byggs från. Allt utan ramverk, som trythis.one. Webbgrunderna i agentreglernas `WEB.md` ingår från start.
 - **Svar 2026-11-26:** länksamling, i första hand YouTube-kanaler (se Beslut i HANDOFF).
 - **Ägarens första länkar (2026-11-26):**

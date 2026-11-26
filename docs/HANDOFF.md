@@ -19,6 +19,10 @@ Läs den här först i varje ny session, oavsett agent. Skriv så att någon uta
 - `AGENTS.md`: hänvisning till agentreglerna + projektregler
 - `CLAUDE.md`: bara en pekare till `AGENTS.md`
 - `docs/BACKLOG.md`: buggar, funktioner och planering (B-/F-/D-) samt föreslagna körningar
+- `index.html`: hela sidan (HTML, CSS och JS i en fil, inget byggsteg)
+- `links.json`: alla grupper och länkar. Sidan byggs från den här filen; nya länkar läggs till här.
+- `assets/fonts/`: Inter (lokalt, OFL-licens bredvid), samma fil som trythis.one
+- `.assetsignore`: det Cloudflare inte ska publicera (dokumentation m.m.)
 
 ## Beslut
 - **2026-11-26:** Sidan är en länksamling med grupper av länkar, inte en "länk i bio"-sida. Först YouTube-kanaler, senare andra platser. Det är tips på saker ägaren gillar som kan intressera alla, utan profil eller annat som knyter sidan till ägaren personligen. Den ska vara snygg och strukturerad, inte bara rena länkar (ägarens besked).
@@ -31,15 +35,16 @@ Läs den här först i varje ny session, oavsett agent. Skriv så att någon uta
 _Inget._
 
 ## Läget nu
-- Repot har bara dokumentation. Ingen sida är byggd än.
-- Sidans typ är bestämd (länksamling, först YouTube-kanaler). Första körningen (F-001, F-004) väntar på "Kör" och gärna ägarens kanallista.
+- Demodesign klar (F-001): mörkt tema som trythis.one, fem YouTube-kanaler i två grupper, kort med färgad cirkel, sökruta och gruppfilter (gruppen kan länkas med t.ex. `#space`). Provad i Chromium i dator- och mobilbredd utan konsolfel. Inte publicerad på någon adress än (F-002).
+- En förhandsvisning finns som privat Claude-artefakt för ägaren.
 
 ## Nästa steg
-1. Ägaren svarar på frågorna under F-001 och F-002 i `docs/BACKLOG.md` (eller godkänner rekommendationerna).
-2. Bygg första versionen (F-001, F-004), sedan publicering (F-002).
+1. Ägaren tittar på demodesignen och ger synpunkter.
+2. Justera (F-001), hämta kanalbilder (F-004), sedan publicering (F-002).
 
 ## Senaste ändringar
 | Datum | Agent | Vad |
 |---|---|---|
+| 2026-11-26 | Claude | F-001: demodesign med fem kanaler i två grupper, ej publicerad. |
 | 2026-11-26 | Claude | Beslut: länksamling, först YouTube-kanaler. F-003–F-005 inlagda. |
 | 2026-11-26 | Claude | Repot uppsatt enligt agentreglerna v1.14: AGENTS.md, handoff och backlog. F-001 och F-002 inlagda. |

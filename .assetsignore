@@ -1,0 +1,18 @@
+# Files Cloudflare Workers must NOT publish (same syntax as .gitignore).
+# Everything that is not the site itself belongs here.
+
+# Agent and project documentation
+*.md
+docs/
+.gemini/
+.claude/
+.cursor/
+.github/
+
+# Tools and development files
+tools/
+node_modules/
+.git/
+.gitignore
+.wrangler/
+.DS_Store

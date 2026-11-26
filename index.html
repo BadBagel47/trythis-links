@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#050b18" />
+    <meta name="description" content="Hand-picked channels and links worth your time." />
+    <title>Try this links</title>
+    <link rel="preload" href="assets/fonts/inter-latin-wght-normal-5.3.0.woff2" as="font" type="font/woff2" crossorigin />
+    <style>
+      /* VOICE everyday: a calm, hand-picked shelf of recommendations, sibling of trythis.one
+         IDEA a night-time channel guide: each tip is a lit tile in the channel's own colour
+         PICTURE the cards themselves, grouped in shelves, with a glowing monogram or channel image
+         COLOUR deep space #050b18 ground, soft blue haze, ink #e3e5ec, each link's own accent colour
+         TYPE Inter (local, as on trythis.one), heavy titles, regular text
+         LAYOUT title + search + group chips on top, shelves of cards below; one column on phones */
+
+      @font-face {
+        font-family: Inter;
+        src: url("assets/fonts/inter-latin-wght-normal-5.3.0.woff2") format("woff2");
+        font-weight: 100 900;
+        font-style: normal;
+        font-display: swap;
+      }
+
+      :root {
+        color-scheme: dark;
+        --page: #050b18;
+        --ink: #e3e5ec;
+        --muted: #a3a9ba;
+        --line: rgb(255 255 255 / 10%);
+        --panel: rgb(255 255 255 / 4%);
+        --focus: #9be4ee;
+      }
+
+      * { box-sizing: border-box; min-width: 0; }
+
+      /* WEB basics: no blue tap highlight, focus ring only for keyboard users */
+      * { -webkit-tap-highlight-color: transparent; }
+      :focus:not(:focus-visible) { outline: none; }
+      :focus-visible { outline: 2px solid var(--focus); outline-offset: 3px; }
+
+      html { min-width: 320px; background: var(--page); }
+
+      body {
+        margin: 0;
+        min-height: 100vh;
+        background: var(--page);
+        color: var(--ink);
+        font: 16px/1.55 Inter, ui-sans-serif, system-ui, -apple-system, "Segoe UI", sans-serif;
+        -webkit-font-smoothing: antialiased;
+        overflow-x: clip;
+      }
+
+      /* Static haze, no blur filter (same reason as trythis.one D-007) */
+      body::before {
+        position: fixed;
+        z-index: -1;
+        inset: 0;
+        background:
+          radial-gradient(ellipse 60% 45% at 18% 0%, rgb(128 168 255 / 22%), transparent 70%),
+          radial-gradient(ellipse 50% 40% at 92% 30%, rgb(151 126 255 / 14%), transparent 70%),
+          radial-gradient(ellipse 60% 50% at 50% 110%, rgb(91 185 224 / 12%), transparent 70%);
+        content: "";
+        pointer-events: none;
+      }
+
+      .wrap {
+        width: 100%;
+        max-width: 1120px;
+        margin: 0 auto;
+        padding-left: max(5vw, 16px, env(safe-area-inset-left, 0px));
+        padding-right: max(5vw, 16px, env(safe-area-inset-right, 0px));
+      }
+
+      header { padding-top: clamp(28px, 6vw, 72px); padding-bottom: 8px; }
+
+      .brand {
+        display: inline-flex;
+        align-items: center;
+        gap: 8px;
+        color: var(--muted);
+        font-size: 15px;
+        font-weight: 600;
+        text-decoration: none;
+        border-radius: 6px;
+      }
+      .brand:hover { color: var(--ink); }
+      .brand b { color: var(--ink); font-weight: 800; }
+      .brand svg { width: 18px; height: 18px; }
+
+      h1 {
+        margin: 18px 0 10px;
+        font-size: clamp(34px, 5.4vw, 52px);
+        font-weight: 800;
+        line-height: 1.05;
+        letter-spacing: -0.02em;
+        text-wrap: balance;
+      }
+
+      .lede { margin: 0; max-width: 46ch; color: var(--muted); font-size: 17px; }
+
+      .controls {
+        position: sticky;
+        top: 0;
+        z-index: 5;
+        margin-top: 28px;
+        padding: 12px 0;
+        background: linear-gradient(var(--page) 75%, transparent);
+      }
+      .controls .wrap { display: flex; flex-wrap: wrap; gap: 10px 14px; align-items: center; }
+
+      .search { position: relative; flex: 1 1 260px; max-width: 380px; }
+      .search svg {
+        position: absolute;
+        left: 14px;
+        top: 50%;
+        width: 18px;
+        height: 18px;
+        translate: 0 -50%;
+        color: var(--muted);
+        pointer-events: none;
+      }
+      .search input {
+        width: 100%;
+        height: 46px;
+        padding: 0 14px 0 42px;
+        border: 1px solid var(--line);
+        border-radius: 12px;
+        background: rgb(255 255 255 / 6%);
+        color: var(--ink);
+        font: inherit;
+        font-size: 16px;
+      }
+      .search input::placeholder { color: #7e8598; }
+      /* Text fields keep a visible focus ring, in the project's colour */
+      .search input:focus { outline: 2px solid var(--focus); outline-offset: 1px; border-color: transparent; }
+
+      .chips { display: flex; flex-wrap: wrap; gap: 8px; }
+      .chip {
+        display: inline-flex;
+        align-items: center;
+        gap: 8px;
+        min-height: 44px;
+        padding: 0 16px;
+        border: 1px solid var(--line);
+        border-radius: 999px;
+        background: var(--panel);
+        color: var(--ink);
+        font: inherit;
+        font-size: 15px;
+        font-weight: 600;
+        cursor: pointer;
+        transition: background 0.15s, border-color 0.15s, transform 0.1s;
+      }
+      .chip:hover { background: rgb(255 255 255 / 9%); }
+      .chip:active { transform: scale(0.96); }
+      .chip[aria-pressed="true"] { background: var(--ink); border-color: var(--ink); color: var(--page); }
+      .chip span { color: inherit; opacity: 0.6; font-variant-numeric: tabular-nums; }
+
+      main { padding-bottom: 40px; }
+
+      .shelf { margin-top: 36px; }
+      .shelf[hidden], .card[hidden] { display: none; }
+      .shelf-head {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: baseline;
+        gap: 4px 14px;
+        padding-bottom: 14px;
+        border-bottom: 1px solid var(--line);
+        margin-bottom: 18px;
+      }
+      .shelf-head h2 { margin: 0; font-size: 24px; font-weight: 800; letter-spacing: -0.01em; }
+      .shelf-head p { margin: 0; color: var(--muted); font-size: 15px; }
+
+      .grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(min(100%, 300px), 1fr));
+        gap: 16px;
+      }
+
+      .card {
+        --c: #9be4ee;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        gap: 14px;
+        padding: 20px;
+        border: 1px solid color-mix(in srgb, var(--c) 22%, transparent);
+        border-radius: 18px;
+        background:
+          radial-gradient(120% 90% at 0% 0%, color-mix(in srgb, var(--c) 20%, transparent), transparent 60%),
+          rgb(255 255 255 / 3.5%);
+        color: inherit;
+        text-decoration: none;
+        transition: transform 0.18s ease, border-color 0.18s ease, background-color 0.18s ease;
+      }
+      .card:hover { transform: translateY(-3px); border-color: color-mix(in srgb, var(--c) 55%, transparent); background-color: rgb(255 255 255 / 6%); }
+      .card:active { transform: translateY(0) scale(0.985); }
+      .card:focus-visible { outline-color: var(--c); }
+
+      .top { display: flex; align-items: center; gap: 14px; }
+
+      .avatar {
+        flex: none;
+        display: grid;
+        place-items: center;
+        width: 60px;
+        height: 60px;
+        border-radius: 50%;
+        overflow: hidden;
+        background: radial-gradient(circle at 32% 28%, color-mix(in srgb, var(--c) 70%, white), var(--c) 45%, color-mix(in srgb, var(--c) 45%, black));
+        box-shadow: 0 0 0 3px color-mix(in srgb, var(--c) 25%, transparent), 0 8px 24px -8px var(--c);
+        color: #0a0f1d;
+        font-size: 21px;
+        font-weight: 800;
+        letter-spacing: -0.02em;
+      }
+      .avatar img { width: 100%; height: 100%; object-fit: cover; }
+
+      .who { display: grid; gap: 2px; }
+      .who h3 { margin: 0; font-size: 19px; font-weight: 750; line-height: 1.2; }
+      .who small { color: var(--muted); font-size: 14px; overflow-wrap: anywhere; }
+
+      .note { margin: 0; color: #c9cdd8; font-size: 16px; flex: 1; }
+
+      .meta {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 12px;
+        padding-top: 12px;
+        border-top: 1px solid var(--line);
+        color: var(--muted);
+        font-size: 14px;
+        font-weight: 600;
+      }
+      .platform { display: inline-flex; align-items: center; gap: 8px; }
+      .platform svg { width: 20px; height: 20px; }
+      .go { display: inline-flex; align-items: center; gap: 6px; color: var(--ink); white-space: nowrap; }
+      .go svg { width: 16px; height: 16px; transition: translate 0.18s ease; }
+      .card:hover .go svg { translate: 2px -2px; }
+
+      .empty { margin-top: 48px; padding: 32px 20px; border: 1px dashed var(--line); border-radius: 18px; text-align: center; color: var(--muted); }
+      .empty[hidden] { display: none; }
+      .empty button {
+        margin-top: 12px;
+        min-height: 44px;
+        padding: 0 18px;
+        border: 1px solid var(--line);
+        border-radius: 999px;
+        background: var(--panel);
+        color: var(--ink);
+        font: inherit;
+        font-weight: 600;
+        cursor: pointer;
+      }
+      .empty button:active { transform: scale(0.96); }
+
+      footer { padding: 28px 0 40px; border-top: 1px solid var(--line); color: var(--muted); font-size: 14px; }
+      footer .wrap { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 8px 20px; }
+      footer a { color: var(--ink); text-underline-offset: 3px; border-radius: 4px; }
+
+      .js-error { margin-top: 36px; color: var(--muted); }
+
+      /* One motion: cards rise in when the page loads */
+      @keyframes rise { from { opacity: 0; transform: translateY(10px); } }
+      .card { animation: rise 0.45s ease both; animation-delay: calc(var(--i, 0) * 60ms); }
+
+      @media (prefers-reduced-motion: reduce) {
+        .card, .card .go svg, .chip { animation: none; transition: none; }
+        .card:hover { transform: none; }
+      }
+
+      @media (max-width: 600px) {
+        .search { max-width: none; flex-basis: 100%; }
+        .card { padding: 18px; }
+        .avatar { width: 52px; height: 52px; font-size: 18px; }
+      }
+    </style>
+  </head>
+  <body>
+    <header class="wrap">
+      <a class="brand" href="https://trythis.one/">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 18l-6-6 6-6" /></svg>
+        <span><b>trythis</b>.one</span>
+      </a>
+      <h1>Things worth your time</h1>
+      <p class="lede">A hand-picked list of channels and places on the internet that are worth a visit. Pick a group or search.</p>
+    </header>
+
+    <div class="controls">
+      <div class="wrap">
+        <label class="search">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="11" cy="11" r="7" /><path d="M20 20l-3.5-3.5" /></svg>
+          <input id="q" type="search" placeholder="Search links" autocomplete="off" aria-label="Search links" />
+        </label>
+        <div class="chips" id="chips" role="group" aria-label="Filter by group"></div>
+      </div>
+    </div>
+
+    <main class="wrap" id="list">
+      <noscript><p class="js-error">This page needs JavaScript to show the links.</p></noscript>
+    </main>
+
+    <div class="wrap">
+      <div class="empty" id="empty" hidden>
+        <p id="empty-text">No links match your search.</p>
+        <button type="button" id="clear">Clear search</button>
+      </div>
+    </div>
+
+    <footer>
+      <div class="wrap">
+        <span>Links open on the original site in a new tab.</span>
+        <span>Part of <a href="https://trythis.one/">trythis.one</a></span>
+      </div>
+    </footer>
+
+    <script>
+      {
+        const ICONS = {
+          youtube:
+            '<svg viewBox="0 0 24 24" aria-hidden="true"><rect x="1.5" y="4.5" width="21" height="15" rx="4.5" fill="#ff3d3d"/><path d="M10 9l5.2 3L10 15z" fill="#fff"/></svg>',
+          link:
+            '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M10 14a4.5 4.5 0 006.4 0l3-3a4.5 4.5 0 00-6.4-6.4l-1 1"/><path d="M14 10a4.5 4.5 0 00-6.4 0l-3 3a4.5 4.5 0 006.4 6.4l1-1"/></svg>',
+          arrow:
+            '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17L17 7M9 7h8v8"/></svg>',
+        };
+
+        const esc = (v) =>
+          String(v ?? "").replace(/[&<>"']/g, (ch) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" })[ch]);
+
+        const safeColor = (c) => (/^#[0-9a-f]{3,8}$/i.test(c || "") ? c : "#9be4ee");
+        const safeUrl = (u) => (/^https:\/\//i.test(u || "") ? u : "#");
+
+        const platformOf = (url) => {
+          try {
+            const host = new URL(url).hostname.replace(/^www\./, "");
+            if (host === "youtube.com" || host === "youtu.be" || host === "m.youtube.com") return { key: "youtube", label: "YouTube" };
+            return { key: "link", label: host };
+          } catch {
+            return { key: "link", label: "Link" };
+          }
+        };
+
+        const handleOf = (url) => {
+          const m = /youtube\.com\/(@[^/?#]+)/i.exec(url || "");
+          return m ? m[1] : platformOf(url).label;
+        };
+
+        const initials = (name) =>
+          String(name || "?")
+            .split(/\s+/)
+            .filter(Boolean)
+            .slice(0, 2)
+            .map((w) => w[0].toUpperCase())
+            .join("");
+
+        const list = document.getElementById("list");
+        const chipsEl = document.getElementById("chips");
+        const q = document.getElementById("q");
+        const empty = document.getElementById("empty");
+        const emptyText = document.getElementById("empty-text");
+
+        let data = { groups: [], links: [] };
+        let active = "all";
+
+        const card = (l, i) => {
+          const idx = data.links.indexOf(l);
+          const p = platformOf(l.url);
+          const avatar = l.image
+            ? `<img src="${esc(l.image)}" alt="" loading="lazy" width="60" height="60">`
+            : esc(initials(l.name));
+          return `<a class="card" data-idx="${idx}" href="${esc(safeUrl(l.url))}" target="_blank" rel="noopener noreferrer"
+              style="--c:${safeColor(l.color)};--i:${i}" aria-label="${esc(l.name)} on ${esc(p.label)} (opens in a new tab)">
+            <div class="top">
+              <div class="avatar" aria-hidden="true">${avatar}</div>
+              <div class="who"><h3>${esc(l.name)}</h3><small>${esc(handleOf(l.url))}</small></div>
+            </div>
+            <p class="note">${esc(l.note)}</p>
+            <div class="meta">
+              <span class="platform">${ICONS[p.key]}${esc(p.label)}</span>
+              <span class="go">Visit ${ICONS.arrow}</span>
+            </div>
+          </a>`;
+        };
+
+        const render = () => {
+          let i = 0;
+          list.innerHTML = data.groups
+            .map((g) => {
+              const items = data.links.filter((l) => l.group === g.id);
+              if (!items.length) return "";
+              return `<section class="shelf" data-group="${esc(g.id)}" aria-labelledby="g-${esc(g.id)}">
+                <div class="shelf-head"><h2 id="g-${esc(g.id)}">${esc(g.name)}</h2><p>${esc(g.description)}</p></div>
+                <div class="grid">${items.map((l) => card(l, i++)).join("")}</div>
+              </section>`;
+            })
+            .join("");
+
+          const counts = (id) => (id === "all" ? data.links.length : data.links.filter((l) => l.group === id).length);
+          chipsEl.innerHTML = [{ id: "all", name: "All" }, ...data.groups]
+            .filter((g) => counts(g.id) > 0)
+            .map((g) => `<button type="button" class="chip" data-id="${esc(g.id)}" aria-pressed="${g.id === active}">${esc(g.name)} <span>${counts(g.id)}</span></button>`)
+            .join("");
+          filter();
+        };
+
+        const filter = () => {
+          const term = q.value.trim().toLowerCase();
+          let shown = 0;
+          for (const shelf of list.querySelectorAll(".shelf")) {
+            const groupOk = active === "all" || shelf.dataset.group === active;
+            let visible = 0;
+            for (const c of shelf.querySelectorAll(".card")) {
+              const l = data.links[Number(c.dataset.idx)] || {};
+              const hay = [l.name, l.note, l.url, handleOf(l.url)].join(" ").toLowerCase();
+              const ok = groupOk && (!term || hay.includes(term));
+              c.hidden = !ok;
+              if (ok) visible++;
+            }
+            shelf.hidden = visible === 0;
+            shown += visible;
+          }
+          for (const chip of chipsEl.querySelectorAll(".chip")) chip.setAttribute("aria-pressed", String(chip.dataset.id === active));
+          empty.hidden = shown > 0;
+          if (!shown) emptyText.textContent = term ? `No links match “${q.value.trim()}”.` : "No links here yet.";
+        };
+
+        const setGroup = (id) => {
+          active = id;
+          try {
+            history.replaceState(null, "", id === "all" ? location.pathname + location.search : "#" + id);
+          } catch {}
+          filter();
+        };
+
+        chipsEl.addEventListener("click", (e) => {
+          const b = e.target.closest(".chip");
+          if (b) setGroup(b.dataset.id);
+        });
+        q.addEventListener("input", filter);
+        window.addEventListener("hashchange", () => {
+          const id = location.hash.slice(1);
+          active = data.groups.some((g) => g.id === id) ? id : "all";
+          filter();
+        });
+        document.getElementById("clear").addEventListener("click", () => {
+          q.value = "";
+          setGroup("all");
+          q.focus();
+        });
+
+        fetch("links.json", { cache: "no-cache" })
+          .then((r) => {
+            if (!r.ok) throw new Error(r.status);
+            return r.json();
+          })
+          .then((json) => {
+            data = { groups: Array.isArray(json.groups) ? json.groups : [], links: Array.isArray(json.links) ? json.links : [] };
+            const fromHash = location.hash.slice(1);
+            if (data.groups.some((g) => g.id === fromHash)) active = fromHash;
+            render();
+          })
+          .catch(() => {
+            list.innerHTML = '<p class="js-error">The links could not be loaded. Please try again in a moment.</p>';
+          });
+      }
+    </script>
+  </body>
+</html>
