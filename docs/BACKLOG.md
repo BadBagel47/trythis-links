@@ -6,8 +6,8 @@ ID: `B-###` buggar · `F-###` funktioner · `D-###` planering/design. En gemensa
 Ögonblicksbild, ersätts vid varje nytt förslag.
 
 Prioriterat för: en snygg första version så snabbt som möjligt, sedan enklare påfyllning
-- **A** – stark modell, medelnivå – Justera demodesignen och hämta kanalbilder – väntar på ägarens synpunkter
-  - F-001 – Ändringar efter ägarens synpunkter på demodesignen
+- **A** – stark modell, medelnivå – Nya länkar och kanalbilder
+  - F-001 – Lägg till gruppen "Design & web" med fyra länkar och byt Tom Scotts text
   - F-004 – Kanalbild, namn och beskrivning hämtas automatiskt från länken och sparas på sidan
 - **B** – standardmodell, medelnivå – Publicering på underdomänen – bygger på A
   - F-002 – Förbered publicering via Cloudflare Workers och ge ägaren stegen för engångsåtgärden
@@ -22,6 +22,12 @@ Prioriterat för: en snygg första version så snabbt som möjligt, sedan enklar
 - **Prioritet:** Hög
 - **Status:** Demodesign klar 2026-11-26, väntar på ägarens synpunkter. Inte publicerad (F-002). Kanalerna visas med initialer i färgade cirklar tills riktiga kanalbilder hämtas (F-004).
 - **Vad:** En länksamling med grupper av länkar, först YouTube-kanaler, senare andra platser. Snygg, inte bara rena länkar: varje länk visas som ett kort (bild, namn, ägarens egen kommentar), grupperat i sektioner, med sökruta och filtrering på grupp. Alla länkar ligger i en enda lättläst listfil som sidan byggs från. Allt utan ramverk, som trythis.one. Webbgrunderna i agentreglernas `WEB.md` ingår från start.
+- **Nya länkar från ägaren (2026-11-26)**, föreslagen ny grupp "Design & web" (id `design`) med korttexter:
+  - https://material.io/ – Material Design: "Google's open design system: guidelines, components, colour and type tools, and icons."
+  - https://developer.chrome.com/docs/modern-web-guidance – Modern Web Guidance: "Chrome's vetted guides that teach AI coding agents modern web patterns, with browser support data."
+  - https://styles.refero.design/ – Refero Styles: "Over 2,000 design systems pulled from real product sites, ready to copy as tokens or DESIGN.md."
+  - https://21st.dev/ – 21st.dev: "A community library of polished React UI components to drop into your own project."
+  - Molnmiljön når inte sajterna (DNS blockerad); beskrivningarna bygger på webbsökning.
 - **Förslag på ny korttext för Tom Scott** (görs vid nästa körning): "Short videos about amazing places and odd facts, now back with a weekly road trip through England."
 - **Svar 2026-11-26:** länksamling, i första hand YouTube-kanaler (se Beslut i HANDOFF).
 - **Ägarens första länkar (2026-11-26):**
