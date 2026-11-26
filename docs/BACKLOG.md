@@ -20,6 +20,7 @@ Prioriterat för: en snygg första version så snabbt som möjligt, sedan enklar
 
 ### F-001 Länksida: första versionen
 - **Prioritet:** Hög
+- **Status:** Pågår 2026-11-26 (Claude, gren `claude/laughing-keller-0r00gv`) – demodesign först, på ägarens begäran
 - **Vad:** En länksamling med grupper av länkar, först YouTube-kanaler, senare andra platser. Snygg, inte bara rena länkar: varje länk visas som ett kort (bild, namn, ägarens egen kommentar), grupperat i sektioner, med sökruta och filtrering på grupp. Alla länkar ligger i en enda lättläst listfil som sidan byggs från. Allt utan ramverk, som trythis.one. Webbgrunderna i agentreglernas `WEB.md` ingår från start.
 - **Svar 2026-11-26:** länksamling, i första hand YouTube-kanaler (se Beslut i HANDOFF).
 - **Ägarens första länkar (2026-11-26):**
