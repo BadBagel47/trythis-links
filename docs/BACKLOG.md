@@ -53,6 +53,14 @@ Prioriterat för: en snygg första version så snabbt som möjligt, sedan enklar
 ### F-005 Senaste videon per kanal
 - **Prioritet:** Låg
 - **Vad:** YouTubes öppna flöde per kanal (ingen API-nyckel) läses av en schemalagd GitHub Action som uppdaterar senaste videons bild och titel. Ingen inbäddad spelare, så inga kakor från YouTube.
+- **Utredning (2026-11-26):**
+  - Flödet `https://www.youtube.com/feeds/videos.xml?channel_id=UC…` är öppet och tillhandahålls av YouTube för flödesläsare. Det behöver kanalens ID (UC…), inte @namnet. ID:t slås upp en gång och sparas i `links.json`.
+  - Flödet kan inte läsas direkt från besökarens webbläsare (YouTube tillåter inte det, CORS), så hämtningen måste ske på serversidan: schemalagd GitHub Action (rekommenderas) eller en Cloudflare Worker.
+  - Flödet tar med Shorts. Ett inofficiellt flöde för bara vanliga videor finns (`playlist_id=UULF…`), men det kan sluta fungera utan förvarning.
+  - Flödet svarar ibland med fel; behåll då senast kända video.
+  - Miniatyrbilden laddas ner och sparas på sidan, så att besökarna inte kontaktar Google.
+  - Tom Scott laddar sällan upp nya videor sedan 2024, så hans senaste video kan vara gammal.
+  - Molnmiljön når inte YouTube, så agenten kan inte prova flödet härifrån.
 
 ## Klart
 _Inget ännu._
