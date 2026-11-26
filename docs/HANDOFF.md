@@ -13,6 +13,7 @@ Läs den här först i varje ny session, oavsett agent. Skriv så att någon uta
   - `trythis.one` nås inte från miljön (proxy 403), så agenten kan inte kontrollera den publicerade sidan.
   - Repot `BadBagel47/trythis.one` gick att läsa (för design och publiceringssätt). Läsåtkomst till `BadBagel47/trythis-infra` nekades.
   - Agenten har ingen åtkomst till Cloudflare (DNS, Workers).
+  - YouTube (`www.youtube.com`, `yt3.ggpht.com`) nås inte från miljön (proxy 403), så kanalbilder kan inte hämtas härifrån (F-004).
 
 ## Dokumentkarta
 - `AGENTS.md`: hänvisning till agentreglerna + projektregler
@@ -20,7 +21,7 @@ Läs den här först i varje ny session, oavsett agent. Skriv så att någon uta
 - `docs/BACKLOG.md`: buggar, funktioner och planering (B-/F-/D-) samt föreslagna körningar
 
 ## Beslut
-_Inga ännu._
+- **2026-11-26:** Sidan är en länksamling med grupper av länkar, inte en "länk i bio"-sida. Först YouTube-kanaler, senare andra platser. Den ska vara snygg och strukturerad, inte bara rena länkar (ägarens besked).
 
 ## Engångsåtgärder
 - **Kommer att föreslås (F-002):** koppla repot till en Worker hos Cloudflare och lägg till underdomänen som egen domän, så att varje push till `main` publiceras automatiskt.
@@ -31,13 +32,14 @@ _Inget._
 
 ## Läget nu
 - Repot har bara dokumentation. Ingen sida är byggd än.
-- Första körningen (F-001) väntar på ägarens svar om vad sidan ska innehålla.
+- Sidans typ är bestämd (länksamling, först YouTube-kanaler). Första körningen (F-001, F-004) väntar på "Kör" och gärna ägarens kanallista.
 
 ## Nästa steg
-1. Ägaren svarar på frågorna under F-001 och F-002 i `docs/BACKLOG.md`.
-2. Bygg första versionen (F-001), sedan publicering (F-002).
+1. Ägaren svarar på frågorna under F-001 och F-002 i `docs/BACKLOG.md` (eller godkänner rekommendationerna).
+2. Bygg första versionen (F-001, F-004), sedan publicering (F-002).
 
 ## Senaste ändringar
 | Datum | Agent | Vad |
 |---|---|---|
+| 2026-11-26 | Claude | Beslut: länksamling, först YouTube-kanaler. F-003–F-005 inlagda. |
 | 2026-11-26 | Claude | Repot uppsatt enligt agentreglerna v1.14: AGENTS.md, handoff och backlog. F-001 och F-002 inlagda. |
