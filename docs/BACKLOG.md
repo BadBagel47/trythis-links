@@ -22,6 +22,7 @@ Parkerat: F-002 (publicering på links.trythis.one)
 
 ### F-001 Länksida: första versionen
 - **Prioritet:** Hög
+- **Pågår:** 2026-11-26 (Claude, gren `claude/laughing-keller-0r00gv`)
 - **Status:** Demodesign klar 2026-11-26, väntar på ägarens synpunkter. Inte publicerad (F-002). Kanalerna visas med initialer i färgade cirklar tills riktiga kanalbilder hämtas (F-004).
 - **Vad:** En länksamling med grupper av länkar, först YouTube-kanaler, senare andra platser. Snygg, inte bara rena länkar: varje länk visas som ett kort (bild, namn, ägarens egen kommentar), grupperat i sektioner, med sökruta och filtrering på grupp. Alla länkar ligger i en enda lättläst listfil som sidan byggs från. Allt utan ramverk, som trythis.one. Webbgrunderna i agentreglernas `WEB.md` ingår från start.
 - **Nya länkar från ägaren (2026-11-26)**, föreslagen ny grupp "Design & web" (id `design`) med korttexter:
@@ -57,6 +58,7 @@ Parkerat: F-002 (publicering på links.trythis.one)
 
 ### F-004 Hämta kanalbild och namn automatiskt
 - **Prioritet:** Hög
+- **Pågår:** 2026-11-26 (Claude, gren `claude/laughing-keller-0r00gv`)
 - **Vad:** Bild, namn och beskrivning hämtas från länkens förhandsinformation och sparas på sidan, så att besökarnas webbläsare inte kontaktar YouTube (inga kakor från tredje part). Sedan ägaren ändrade nätverket 2026-11-26 når molnmiljön YouTube och de övriga länkarnas sajter, så agenten kan hämta och prova själv.
 - **Lag och regler:** kanalbilder och namn används som förhandsvisning med länk till källan, vilket är vanligt, men bilderna tillhör kanalerna. Ingen juridisk bedömning; ägaren kan välja att ta bort en bild på begäran.
 
@@ -73,6 +75,7 @@ Parkerat: F-002 (publicering på links.trythis.one)
 
 ### F-006 Publicering på GitHub Pages under arbetet
 - **Prioritet:** Hög
+- **Pågår:** 2026-11-26 (Claude, gren `claude/laughing-keller-0r00gv`)
 - **Vad:** En GitHub Action publicerar bara sidans filer (`index.html`, `links.json`, `assets/`) till GitHub Pages vid varje push till `main`, så att dokumentationen inte blir en del av sajten. Adress: https://badbagel47.github.io/trythis-links/
 - **Engångsåtgärd för ägaren:** Settings → Pages → Source: "GitHub Actions". Behövs också om agenten inte får skapa workflow-filer: lägg in filen via github.com.
 
