@@ -37,13 +37,13 @@ Parkerat: F-002 (publicering på links.trythis.one)
   - Miniatyrbilden laddas ner och sparas på sidan, så att besökarna inte kontaktar Google.
   - Rättat 2026-11-26: Tom Scott är tillbaka sedan mars 2026 med en veckoserie ("Tom Scott: England", först på Nebula, en vecka senare på YouTube), så flödet ger färska videor.
 
+## Klart
+
 ### F-006 Publicering på GitHub Pages under arbetet
 - **Prioritet:** Hög
-- **Pågår:** 2026-11-26 (Claude, gren `claude/laughing-keller-0r00gv`) – workflow tillagd, väntar på att ägaren väljer "GitHub Actions" som källa
 - **Vad:** En GitHub Action publicerar bara sidans filer (`index.html`, `links.json`, `assets/`) till GitHub Pages vid varje push till `main`, så att dokumentationen inte blir en del av sajten. Adress: https://badbagel47.github.io/trythis-links/
 - **Engångsåtgärd för ägaren:** Settings → Pages → Source: "GitHub Actions". Behövs också om agenten inte får skapa workflow-filer: lägg in filen via github.com.
-
-## Klart
+- **Klar:** 2026-11-26. Publicerad och kontrollerad: sidan svarar, dokumentation och verktyg publiceras inte.
 
 ### F-001 Länksida: första versionen
 - **Prioritet:** Hög

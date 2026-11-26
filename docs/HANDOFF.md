@@ -8,7 +8,7 @@ Läs den här först i varje ny session, oavsett agent. Skriv så att någon uta
   - Repot var helt tomt: inga commits, inga grenar, inga PR och inga Issues. Ingen befintlig dokumentation, inget att anpassa.
   - Lagar och regler: inget ännu. Se över när innehållet är bestämt (t.ex. om sidan visar personuppgifter, bilder eller tredjepartstjänster).
 - **Projektspråk:** inte bestämt. Standard enligt agentreglerna är engelska för nya projekt (samma som trythis.one). Arbetsdokumenten skrivs på svenska.
-- **Publicering:** inte uppsatt än. Under arbetet: GitHub Pages (F-006, beslut 2026-11-26). Cloudflare och underdomänen är parkerade (F-002).
+- **Publicering:** GitHub Pages via `.github/workflows/pages.yml`, automatiskt vid push till `main` (F-006, beslut 2026-11-26). Cloudflare och underdomänen är parkerade (F-002).
 - **Miljöns begränsningar (2026-11-26, molnsession):**
   - `trythis.one` nås inte från miljön (proxy 403), så agenten kan inte kontrollera den publicerade sidan.
   - Repot `BadBagel47/trythis.one` gick att läsa (för design och publiceringssätt). Läsåtkomst till `BadBagel47/trythis-infra` nekades.
@@ -31,6 +31,8 @@ Läs den här först i varje ny session, oavsett agent. Skriv så att någon uta
 - **2026-11-26:** Sidan är en länksamling med grupper av länkar, inte en "länk i bio"-sida. Först YouTube-kanaler, senare andra platser. Det är tips på saker ägaren gillar som kan intressera alla, utan profil eller annat som knyter sidan till ägaren personligen. Den ska vara snygg och strukturerad, inte bara rena länkar (ägarens besked).
 
 ## Engångsåtgärder
+- **Klar 2026-11-26:** GitHub Pages med källa "GitHub Actions".
+- **Klar 2026-11-26:** ägaren öppnade molnmiljöns nätverk för YouTube och länkarnas sajter.
 - **Kommer att föreslås (F-002):** koppla repot till en Worker hos Cloudflare och lägg till underdomänen som egen domän, så att varje push till `main` publiceras automatiskt.
 - **Kan föreslås:** tillåt `trythis.one` (och underdomänen) i molnmiljöns nätverk, så att agenten kan kontrollera den publicerade sidan.
 
@@ -40,10 +42,10 @@ _Inget._
 ## Läget nu
 - Sidan har nio länkar i tre grupper (Space, Science & curiosities, Design & web), kort med riktiga bilder, sökruta och gruppfilter (F-001, F-004). Provad i Chromium i dator- och mobilbredd utan konsolfel.
 - Bilderna hämtas med `tools/fetch-images.py` (kör den när nya länkar läggs till) och sparas i `assets/images/`.
-- Publicering på GitHub Pages (F-006) är uppsatt via `.github/workflows/pages.yml`. Väntar på att ägaren väljer "GitHub Actions" som källa under Settings → Pages. Adress: https://badbagel47.github.io/trythis-links/
+- Publicerad på GitHub Pages (F-006): https://badbagel47.github.io/trythis-links/ – varje push till `main` publiceras automatiskt. Kontrollerad 2026-11-26.
 
 ## Nästa steg
-1. Ägaren slår på GitHub Pages (källa "GitHub Actions"); kontrollera sedan att körningen lyckas och att sidan syns.
+1. Ägaren tittar på sidan och ger synpunkter.
 2. Nästa körningar: F-003 (snabbspara-knapp) och F-005 (senaste videon).
 
 ## Senaste ändringar
