@@ -22,8 +22,15 @@ Prioriterat för: en snygg första version så snabbt som möjligt, sedan enklar
 - **Prioritet:** Hög
 - **Vad:** En länksamling med grupper av länkar, först YouTube-kanaler, senare andra platser. Snygg, inte bara rena länkar: varje länk visas som ett kort (bild, namn, ägarens egen kommentar), grupperat i sektioner, med sökruta och filtrering på grupp. Alla länkar ligger i en enda lättläst listfil som sidan byggs från. Allt utan ramverk, som trythis.one. Webbgrunderna i agentreglernas `WEB.md` ingår från start.
 - **Svar 2026-11-26:** länksamling, i första hand YouTube-kanaler (se Beslut i HANDOFF).
+- **Ägarens första länkar (2026-11-26):**
+  - https://www.youtube.com/@EverydayAstronaut/videos
+  - https://www.youtube.com/@joescott/videos
+  - https://www.youtube.com/@TomScottGo/videos
+  - https://www.youtube.com/@astrumspace/videos
+  - https://www.youtube.com/@AstrumEarth/videos
+  - Förslag på grupper: "Space" (Everyday Astronaut, Astrum) och "Science & curiosities" (Joe Scott, Tom Scott, Astrum Earth). Agenten skriver en kort kommentar per kanal på engelska som ägaren kan ändra.
 - **Frågor (2026-11-26):**
-  - Vilka kanaler och grupper? Rekommendation: ägaren skickar en lista i valfri form; annars exempelkanaler som byts ut.
+  - Grupper? Rekommendation: se förslaget ovan.
   - Utseende och språk? Rekommendation: mörkt rymdtema och typsnittet Inter som trythis.one men lugnare; kort med kanalbild; sidans text på engelska.
   - Hur läggs länkar till? Rekommendation: en listfil som agenten fyller på när ägaren skickar länkar i chatten (eller som ägaren redigerar på github.com); snabbspara-knapp senare (F-003).
 
