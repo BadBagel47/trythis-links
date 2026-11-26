@@ -5,16 +5,18 @@ ID: `B-###` buggar · `F-###` funktioner · `D-###` planering/design. En gemensa
 ## Föreslagna körningar
 Ögonblicksbild, ersätts vid varje nytt förslag.
 
-Prioriterat för: en snygg första version så snabbt som möjligt, sedan enklare påfyllning
-- **A** – stark modell, medelnivå – Nya länkar och kanalbilder
+Prioriterat för: se sidan på riktigt så snabbt som möjligt, sedan innehållet
+- **A** – standardmodell, medelnivå – Publicering på GitHub Pages
+  - F-006 – Publicera sidan automatiskt på GitHub Pages vid varje ändring, bara själva sidan (inte dokumentationen)
+- **B** – stark modell, medelnivå – Nya länkar och riktiga bilder
   - F-001 – Lägg till gruppen "Design & web" med fyra länkar och byt Tom Scotts text
-  - F-004 – Kanalbild, namn och beskrivning hämtas automatiskt från länken och sparas på sidan
-- **B** – standardmodell, medelnivå – Publicering på underdomänen – bygger på A
-  - F-002 – Förbered publicering via Cloudflare Workers och ge ägaren stegen för engångsåtgärden
-- **C** – standardmodell, medelnivå – Snabbspara-knapp i webbläsaren – bygger på A
-  - F-003 – Bokmärkesknapp som skickar sidan du står på till länklistan
+  - F-004 – Kanalbilder och sajtbilder hämtas och sparas på sidan i stället för initialer
+- **C** – standardmodell, medelnivå – Snabbspara-knapp – bygger på A
+  - F-003 – Bokmärkesknapp som lägger till sidan du står på i listan
 - **D** – standardmodell, medelnivå – Senaste videon per kanal – bygger på A
-  - F-005 – Visa senaste videons bild och titel i kanalkortet, uppdateras automatiskt
+  - F-005 – Visa senaste videons bild och titel på kanalkorten
+
+Parkerat: F-002 (publicering på links.trythis.one)
 
 ## Öppet
 
@@ -43,7 +45,8 @@ Prioriterat för: en snygg första version så snabbt som möjligt, sedan enklar
   - Hur läggs länkar till? Rekommendation: en listfil som agenten fyller på när ägaren skickar länkar i chatten (eller som ägaren redigerar på github.com); snabbspara-knapp senare (F-003).
 
 ### F-002 Publicering på underdomänen
-- **Prioritet:** Hög
+- **Prioritet:** Låg
+- **Status:** Parkerad 2026-11-26 – ägaren vill låta sidan ligga på GitHub Pages under arbetet (F-006).
 - **Vad:** Publicera sidan på Cloudflare Workers (static assets) som trythis.one, med `.assetsignore` så att dokumentation och verktyg inte publiceras. Ägaren gör en engångsåtgärd hos Cloudflare: koppla repot och lägga till underdomänen.
 - **Frågor (2026-11-26):**
   - Vilken underdomän? Rekommendation: `links.trythis.one`.
@@ -67,6 +70,11 @@ Prioriterat för: en snygg första version så snabbt som möjligt, sedan enklar
   - Flödet svarar ibland med fel; behåll då senast kända video.
   - Miniatyrbilden laddas ner och sparas på sidan, så att besökarna inte kontaktar Google.
   - Rättat 2026-11-26: Tom Scott är tillbaka sedan mars 2026 med en veckoserie ("Tom Scott: England", först på Nebula, en vecka senare på YouTube), så flödet ger färska videor.
+
+### F-006 Publicering på GitHub Pages under arbetet
+- **Prioritet:** Hög
+- **Vad:** En GitHub Action publicerar bara sidans filer (`index.html`, `links.json`, `assets/`) till GitHub Pages vid varje push till `main`, så att dokumentationen inte blir en del av sajten. Adress: https://badbagel47.github.io/trythis-links/
+- **Engångsåtgärd för ägaren:** Settings → Pages → Source: "GitHub Actions". Behövs också om agenten inte får skapa workflow-filer: lägg in filen via github.com.
 
 ## Klart
 _Inget ännu._

@@ -8,7 +8,7 @@ Läs den här först i varje ny session, oavsett agent. Skriv så att någon uta
   - Repot var helt tomt: inga commits, inga grenar, inga PR och inga Issues. Ingen befintlig dokumentation, inget att anpassa.
   - Lagar och regler: inget ännu. Se över när innehållet är bestämt (t.ex. om sidan visar personuppgifter, bilder eller tredjepartstjänster).
 - **Projektspråk:** inte bestämt. Standard enligt agentreglerna är engelska för nya projekt (samma som trythis.one). Arbetsdokumenten skrivs på svenska.
-- **Publicering:** inte uppsatt. Förslag: Cloudflare Workers (static assets) kopplad till repot, som trythis.one och dess underdomäner (F-002).
+- **Publicering:** inte uppsatt än. Under arbetet: GitHub Pages (F-006, beslut 2026-11-26). Cloudflare och underdomänen är parkerade (F-002).
 - **Miljöns begränsningar (2026-11-26, molnsession):**
   - `trythis.one` nås inte från miljön (proxy 403), så agenten kan inte kontrollera den publicerade sidan.
   - Repot `BadBagel47/trythis.one` gick att läsa (för design och publiceringssätt). Läsåtkomst till `BadBagel47/trythis-infra` nekades.
@@ -25,6 +25,7 @@ Läs den här först i varje ny session, oavsett agent. Skriv så att någon uta
 - `.assetsignore`: det Cloudflare inte ska publicera (dokumentation m.m.)
 
 ## Beslut
+- **2026-11-26:** Sidan ligger på GitHub Pages medan den utvecklas. trythis.one och underdomänen ignoreras tills vidare (F-002 parkerad). Ägarens besked.
 - **2026-11-26:** Sidan är en länksamling med grupper av länkar, inte en "länk i bio"-sida. Först YouTube-kanaler, senare andra platser. Det är tips på saker ägaren gillar som kan intressera alla, utan profil eller annat som knyter sidan till ägaren personligen. Den ska vara snygg och strukturerad, inte bara rena länkar (ägarens besked).
 
 ## Engångsåtgärder
