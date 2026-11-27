@@ -43,6 +43,7 @@ Parkerat: F-002 (publicering på links.trythis.one)
 
 ### F-007 Nya kanaler: djur och goda nyheter
 - **Prioritet:** Medel
+- **Pågår:** 2026-11-27 (Claude, gren `claude/laughing-keller-0r00gv`)
 - **Vad:** Lägg till tre kanaler från ägaren (2026-11-27) i en ny grupp. Ingen passar befintliga grupper.
   - https://www.youtube.com/@thatgoodnewsgirl/videos – That Good News Girl (Jenn Crumm): "Cozy animal stories and good news, a calm break from the headlines."
   - https://www.youtube.com/@GeoBeatsAnimals/videos – GeoBeats Animals: "Short, uplifting stories about people going out of their way to help animals."
@@ -51,6 +52,7 @@ Parkerat: F-002 (publicering på links.trythis.one)
 
 ### F-008 Nya verktyg: Excalidraw och ElevenLabs
 - **Prioritet:** Medel
+- **Pågår:** 2026-11-27 (Claude, gren `claude/laughing-keller-0r00gv`)
 - **Vad:** Lägg till två länkar från ägaren (2026-11-27):
   - https://excalidraw.com/ – Excalidraw: "A free online whiteboard for quick diagrams and sketches that look hand-drawn."
   - https://elevenlabs.io/ – ElevenLabs: "Lifelike AI voices for text-to-speech, dubbing and voice agents, in 90+ languages."
@@ -58,6 +60,7 @@ Parkerat: F-002 (publicering på links.trythis.one)
 
 ### F-009 Nya länkar: fria speltillgångar
 - **Prioritet:** Medel
+- **Pågår:** 2026-11-27 (Claude, gren `claude/laughing-keller-0r00gv`)
 - **Vad:** Lägg till två länkar från ägaren (2026-11-27) i en ny grupp "Game making" (id `games`, "Free art and assets for making your own games."):
   - https://quaternius.com/ – Quaternius: "Hundreds of free low-poly 3D models for games, all CC0 and free to use however you like."
   - https://kenney.nl/ – Kenney: "Thousands of free 2D, 3D and audio game assets in a clean, consistent style, all CC0."
