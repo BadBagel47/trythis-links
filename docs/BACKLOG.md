@@ -9,6 +9,7 @@ Prioriterat för: nytt innehåll först, sedan lättare påfyllning och levande 
 - **A** – standardmodell, låg nivå – Nya länkar
   - F-007 – Lägg till tre djur- och goda nyheter-kanaler i en ny grupp "Animals & good news", med bilder
   - F-008 – Lägg till Excalidraw och ElevenLabs; gruppen "Design & web" byter namn till "Tools & design"
+  - F-009 – Lägg till Quaternius och Kenney i en ny grupp "Game making"
 - **B** – standardmodell, medelnivå – Snabbspara-knapp
   - F-003 – Bokmärkesknapp som lägger till sidan du står på i listan
 - **C** – standardmodell, medelnivå – Senaste videon per kanal
@@ -54,6 +55,13 @@ Parkerat: F-002 (publicering på links.trythis.one)
   - https://excalidraw.com/ – Excalidraw: "A free online whiteboard for quick diagrams and sketches that look hand-drawn."
   - https://elevenlabs.io/ – ElevenLabs: "Lifelike AI voices for text-to-speech, dubbing and voice agents, in 90+ languages."
 - **Förslag:** byt namn på gruppen "Design & web" till "Tools & design" ("Tools and references for making things, from sketches to voices.") och lägg båda där, i stället för en ny grupp med bara två länkar. Bilder hämtas med `tools/fetch-images.py`.
+
+### F-009 Nya länkar: fria speltillgångar
+- **Prioritet:** Medel
+- **Vad:** Lägg till två länkar från ägaren (2026-11-27) i en ny grupp "Game making" (id `games`, "Free art and assets for making your own games."):
+  - https://quaternius.com/ – Quaternius: "Hundreds of free low-poly 3D models for games, all CC0 and free to use however you like."
+  - https://kenney.nl/ – Kenney: "Thousands of free 2D, 3D and audio game assets in a clean, consistent style, all CC0."
+- Bilder hämtas med `tools/fetch-images.py`.
 
 ## Klart
 
