@@ -6,8 +6,8 @@ ID: `B-###` buggar · `F-###` funktioner · `D-###` planering/design. En gemensa
 Ögonblicksbild, ersätts vid varje nytt förslag.
 
 Prioriterat för: nytt innehåll först, sedan lättare påfyllning och levande innehåll
-- **A** – standardmodell, låg nivå – Ny kanal
-  - F-007 – Lägg till That Good News Girl i en ny grupp "Feel-good", med bild
+- **A** – standardmodell, låg nivå – Nya kanaler
+  - F-007 – Lägg till tre djur- och goda nyheter-kanaler i en ny grupp "Animals & good news", med bilder
 - **B** – standardmodell, medelnivå – Snabbspara-knapp
   - F-003 – Bokmärkesknapp som lägger till sidan du står på i listan
 - **C** – standardmodell, medelnivå – Senaste videon per kanal
@@ -39,10 +39,13 @@ Parkerat: F-002 (publicering på links.trythis.one)
   - Miniatyrbilden laddas ner och sparas på sidan, så att besökarna inte kontaktar Google.
   - Rättat 2026-11-26: Tom Scott är tillbaka sedan mars 2026 med en veckoserie ("Tom Scott: England", först på Nebula, en vecka senare på YouTube), så flödet ger färska videor.
 
-### F-007 Ny kanal: That Good News Girl
+### F-007 Nya kanaler: djur och goda nyheter
 - **Prioritet:** Medel
-- **Vad:** Lägg till https://www.youtube.com/@thatgoodnewsgirl/videos (Jenn Crumm, "A cozy corner of the internet for animal stories and good news", cirka 10 000 prenumeranter 2026-11-27). Passar inte befintliga grupper.
-- **Förslag:** ny grupp "Feel-good" (id `feelgood`, "Kind stories, animals and good news for a better mood.") och korttexten "Cozy animal stories and good news from around the world, a calm break from the headlines." Bild hämtas med `tools/fetch-images.py`.
+- **Vad:** Lägg till tre kanaler från ägaren (2026-11-27) i en ny grupp. Ingen passar befintliga grupper.
+  - https://www.youtube.com/@thatgoodnewsgirl/videos – That Good News Girl (Jenn Crumm): "Cozy animal stories and good news, a calm break from the headlines."
+  - https://www.youtube.com/@GeoBeatsAnimals/videos – GeoBeats Animals: "Short, uplifting stories about people going out of their way to help animals."
+  - https://www.youtube.com/@TheDodo/videos – The Dodo: "Heartwarming animal rescues and friendships, from one of the biggest animal channels on YouTube."
+- **Förslag:** ny grupp "Animals & good news" (id `animals`, "Kind people, lucky animals and stories that lift your mood."). Bilder hämtas med `tools/fetch-images.py`.
 
 ## Klart
 
