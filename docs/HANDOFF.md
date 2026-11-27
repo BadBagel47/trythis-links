@@ -27,11 +27,9 @@ Läs den här först i varje ny session, oavsett agent. Skriv så att någon uta
 - `.assetsignore`: det Cloudflare inte ska publicera (används först när F-002 tas upp igen)
 
 ## Beslut
+- **2026-11-27:** Projektregel godkänd: länkar som ägaren skickar i chatten läggs in och publiceras direkt när de passar en befintlig grupp. Nya grupper och större ändringar går via körförslag. Står i `AGENTS.md`.
 - **2026-11-26:** Sidan ligger på GitHub Pages medan den utvecklas. trythis.one och underdomänen ignoreras tills vidare (F-002 parkerad). Ägarens besked.
 - **2026-11-26:** Sidan är en länksamling med grupper av länkar, inte en "länk i bio"-sida. Först YouTube-kanaler, senare andra platser. Det är tips på saker ägaren gillar som kan intressera alla, utan profil eller annat som knyter sidan till ägaren personligen. Den ska vara snygg och strukturerad, inte bara rena länkar (ägarens besked).
-
-## Föreslagna projektregler
-- **Föreslagen 2026-11-27:** Länkar som ägaren skickar i chatten läggs in och publiceras direkt, utan separat "Kör", om agenten bara behöver välja grupp och skriva korttext. Nya grupper och allt annat följer det vanliga arbetssättet. Väntar på ägarens godkännande.
 
 ## Engångsåtgärder
 - **Klar 2026-11-26:** GitHub Pages med källa "GitHub Actions".
@@ -43,9 +41,9 @@ Läs den här först i varje ny session, oavsett agent. Skriv så att någon uta
 _Inget._
 
 ## Läget nu
-- Sidan har nio länkar i tre grupper (Space, Science & curiosities, Design & web), kort med riktiga bilder, sökruta och gruppfilter (F-001, F-004). Provad i Chromium i dator- och mobilbredd utan konsolfel.
+- Sidan har 19 länkar i fem grupper: Space, Science & curiosities, Animals & good news, Tools & design, Game making. Kort med riktiga bilder (utom Poly Pizza, som blockerar hämtning), sökruta och gruppfilter.
 - Bilderna hämtas med `tools/fetch-images.py` (kör den när nya länkar läggs till) och sparas i `assets/images/`.
-- Publicerad på GitHub Pages (F-006): https://badbagel47.github.io/trythis-links/ – varje push till `main` publiceras automatiskt. Kontrollerad 2026-11-26.
+- Publicerad på GitHub Pages (F-006): https://badbagel47.github.io/trythis-links/ – varje push till `main` publiceras automatiskt.
 
 ## Nästa steg
 1. Ägaren tittar på sidan och ger synpunkter.
@@ -54,6 +52,7 @@ _Inget._
 ## Senaste ändringar
 | Datum | Agent | Vad |
 |---|---|---|
+| 2026-11-27 | Claude | F-007–F-009: tio nya länkar, grupperna Animals & good news och Game making, Design & web heter nu Tools & design. Projektregel om direkt tillägg godkänd. |
 | 2026-11-26 | Claude | F-001, F-004: nio länkar i tre grupper med riktiga bilder. F-006: GitHub Pages-workflow. |
 | 2026-11-26 | Claude | F-001: demodesign med fem kanaler i två grupper, ej publicerad. |
 | 2026-11-26 | Claude | Beslut: länksamling, först YouTube-kanaler. F-003–F-005 inlagda. |

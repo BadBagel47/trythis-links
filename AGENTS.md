@@ -16,4 +16,8 @@ A structured link page: hand-picked channels and sites in groups. During develop
 - `.assetsignore`: files Cloudflare must not publish (for later, F-002). Anything new that is not part of the site goes in it in the same commit.
 
 ## Project rules
-_None approved yet._ Proposed rules are listed in `docs/HANDOFF.md` until the owner approves them.
+
+### Links the owner sends are added directly (approved 2026-11-27)
+- When the owner sends links in the chat and they fit an existing group, add them to `links.json`, write a short English card text, run `python3 tools/fetch-images.py`, verify and publish without waiting for "Kör".
+- A new group, renaming a group, or any other change to the page follows the normal workflow (backlog + run proposal).
+- Check each site's own description before writing the card text; never guess facts.

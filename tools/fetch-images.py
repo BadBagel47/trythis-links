@@ -52,8 +52,10 @@ class Head(HTMLParser):
             size = int(m.group(1)) if m else 0
             if "apple-touch-icon" in rel or "apple-icon" in href:
                 self.icons.append((1000 + (size or 180), href))
-            elif "icon" in rel and not href.endswith(".ico"):
-                self.icons.append((size or 1, href))
+            elif "icon" in rel and ".ico" in href:
+                self.icons.append((2, href))  # .ico: usually small, but better than a cropped banner
+            elif "icon" in rel:
+                self.icons.append((size or 3, href))
 
 
 def slug(name):
@@ -68,7 +70,7 @@ def pick_image(url):
     if host.endswith("youtube.com"):
         candidates = [head.og]
     else:
-        candidates = [h for _, h in sorted(head.icons, reverse=True)] + [head.og]
+        candidates = [h for _, h in sorted(head.icons, reverse=True)] + ["/favicon.ico", head.og]
     for c in candidates:
         if c:
             return urljoin(final, c)
@@ -97,7 +99,10 @@ def main():
                 print(f"no picture found: {link['name']}")
                 continue
             _, raw = get(src)
-            img = square(Image.open(io.BytesIO(raw)))
+            pic = Image.open(io.BytesIO(raw))
+            if pic.format == "ICO":
+                pic = pic.ico.getimage(max(pic.ico.sizes()))
+            img = square(pic)
             rel = f"assets/images/{slug(link['name'])}.webp"
             img.save(ROOT / rel, "WEBP", quality=86, method=6)
             link["image"] = rel

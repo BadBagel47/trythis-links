@@ -5,14 +5,10 @@ ID: `B-###` buggar · `F-###` funktioner · `D-###` planering/design. En gemensa
 ## Föreslagna körningar
 Ögonblicksbild, ersätts vid varje nytt förslag.
 
-Prioriterat för: nytt innehåll först, sedan lättare påfyllning och levande innehåll
-- **A** – standardmodell, låg nivå – Nya länkar
-  - F-007 – Lägg till tre djur- och goda nyheter-kanaler i en ny grupp "Animals & good news", med bilder
-  - F-008 – Lägg till Excalidraw och ElevenLabs; gruppen "Design & web" byter namn till "Tools & design"
-  - F-009 – Lägg till Quaternius och Kenney i en ny grupp "Game making"
-- **B** – standardmodell, medelnivå – Snabbspara-knapp
+Prioriterat för: lättare påfyllning, sedan levande innehåll
+- **A** – standardmodell, medelnivå – Snabbspara-knapp
   - F-003 – Bokmärkesknapp som lägger till sidan du står på i listan
-- **C** – standardmodell, medelnivå – Senaste videon per kanal
+- **B** – standardmodell, medelnivå – Senaste videon per kanal
   - F-005 – Visa senaste videons bild och titel på kanalkorten, uppdateras automatiskt
 
 Parkerat: F-002 (publicering på links.trythis.one)
@@ -41,32 +37,34 @@ Parkerat: F-002 (publicering på links.trythis.one)
   - Miniatyrbilden laddas ner och sparas på sidan, så att besökarna inte kontaktar Google.
   - Rättat 2026-11-26: Tom Scott är tillbaka sedan mars 2026 med en veckoserie ("Tom Scott: England", först på Nebula, en vecka senare på YouTube), så flödet ger färska videor.
 
+## Klart
+
 ### F-007 Nya kanaler: djur och goda nyheter
 - **Prioritet:** Medel
-- **Pågår:** 2026-11-27 (Claude, gren `claude/laughing-keller-0r00gv`)
 - **Vad:** Lägg till tre kanaler från ägaren (2026-11-27) i en ny grupp. Ingen passar befintliga grupper.
   - https://www.youtube.com/@thatgoodnewsgirl/videos – That Good News Girl (Jenn Crumm): "Cozy animal stories and good news, a calm break from the headlines."
   - https://www.youtube.com/@GeoBeatsAnimals/videos – GeoBeats Animals: "Short, uplifting stories about people going out of their way to help animals."
   - https://www.youtube.com/@TheDodo/videos – The Dodo: "Heartwarming animal rescues and friendships, from one of the biggest animal channels on YouTube."
 - **Förslag:** ny grupp "Animals & good news" (id `animals`, "Kind people, lucky animals and stories that lift your mood."). Bilder hämtas med `tools/fetch-images.py`.
+- **Klar:** 2026-11-27
 
 ### F-008 Nya verktyg: Excalidraw och ElevenLabs
 - **Prioritet:** Medel
-- **Pågår:** 2026-11-27 (Claude, gren `claude/laughing-keller-0r00gv`)
 - **Vad:** Lägg till två länkar från ägaren (2026-11-27):
   - https://excalidraw.com/ – Excalidraw: "A free online whiteboard for quick diagrams and sketches that look hand-drawn."
   - https://elevenlabs.io/ – ElevenLabs: "Lifelike AI voices for text-to-speech, dubbing and voice agents, in 90+ languages."
 - **Förslag:** byt namn på gruppen "Design & web" till "Tools & design" ("Tools and references for making things, from sketches to voices.") och lägg båda där, i stället för en ny grupp med bara två länkar. Bilder hämtas med `tools/fetch-images.py`.
+- **Klar:** 2026-11-27
 
 ### F-009 Nya länkar: fria speltillgångar
 - **Prioritet:** Medel
-- **Pågår:** 2026-11-27 (Claude, gren `claude/laughing-keller-0r00gv`)
 - **Vad:** Lägg till två länkar från ägaren (2026-11-27) i en ny grupp "Game making" (id `games`, "Free art and assets for making your own games."):
   - https://quaternius.com/ – Quaternius: "Hundreds of free low-poly 3D models for games, all CC0 and free to use however you like."
   - https://kenney.nl/ – Kenney: "Thousands of free 2D, 3D and audio game assets in a clean, consistent style, all CC0."
+  - Tillagda samma dag enligt den nya regeln (direkt i befintlig grupp): https://poly.pizza/ (Poly Pizza), https://polyhaven.com/ (Poly Haven), https://www.mixamo.com/ (Mixamo).
+  - Poly Pizza blockerar automatiska anrop (Cloudflare 403), så kortet visar initialer i stället för bild.
 - Bilder hämtas med `tools/fetch-images.py`.
-
-## Klart
+- **Klar:** 2026-11-27
 
 ### F-006 Publicering på GitHub Pages under arbetet
 - **Prioritet:** Hög

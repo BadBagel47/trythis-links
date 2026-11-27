@@ -11,9 +11,19 @@
       "description": "How the world works, and the odd corners of it."
     },
     {
+      "id": "animals",
+      "name": "Animals & good news",
+      "description": "Kind people, lucky animals and stories that lift your mood."
+    },
+    {
       "id": "design",
-      "name": "Design & web",
-      "description": "Tools and references for making good-looking things on the web."
+      "name": "Tools & design",
+      "description": "Tools and references for making things, from sketches to voices."
+    },
+    {
+      "id": "games",
+      "name": "Game making",
+      "description": "Free art and assets for making your own games."
     }
   ],
   "links": [
@@ -88,6 +98,85 @@
       "note": "Over 12,000 hand-made React components, templates and themes, ready to drop into your project.",
       "color": "#2f6bff",
       "image": "assets/images/21st-dev.webp"
+    },
+    {
+      "name": "That Good News Girl",
+      "url": "https://www.youtube.com/@thatgoodnewsgirl/videos",
+      "group": "animals",
+      "note": "Cozy animal stories and good news, a calm break from the headlines.",
+      "color": "#ff8fbf",
+      "image": "assets/images/that-good-news-girl.webp"
+    },
+    {
+      "name": "GeoBeats Animals",
+      "url": "https://www.youtube.com/@GeoBeatsAnimals/videos",
+      "group": "animals",
+      "note": "Short, uplifting stories about people going out of their way to help animals.",
+      "color": "#f2b84b",
+      "image": "assets/images/geobeats-animals.webp"
+    },
+    {
+      "name": "The Dodo",
+      "url": "https://www.youtube.com/@TheDodo/videos",
+      "group": "animals",
+      "note": "Heartwarming animal rescues and friendships, from one of the biggest animal channels on YouTube.",
+      "color": "#5ab0ff",
+      "image": "assets/images/the-dodo.webp"
+    },
+    {
+      "name": "Excalidraw",
+      "url": "https://excalidraw.com/",
+      "group": "design",
+      "note": "A free online whiteboard for quick diagrams and sketches that look hand-drawn.",
+      "color": "#6965db",
+      "image": "assets/images/excalidraw.webp"
+    },
+    {
+      "name": "ElevenLabs",
+      "url": "https://elevenlabs.io/",
+      "group": "design",
+      "note": "Lifelike AI voices for text-to-speech, dubbing and voice agents, in 90+ languages.",
+      "color": "#d8d2c4",
+      "image": "assets/images/elevenlabs.webp"
+    },
+    {
+      "name": "Quaternius",
+      "url": "https://quaternius.com/",
+      "group": "games",
+      "note": "Hundreds of free low-poly 3D models for games, all CC0 and free to use however you like.",
+      "color": "#f5d90a",
+      "image": "assets/images/quaternius.webp"
+    },
+    {
+      "name": "Kenney",
+      "url": "https://kenney.nl/",
+      "group": "games",
+      "note": "Thousands of free 2D, 3D and audio game assets in a clean, consistent style, all CC0.",
+      "color": "#3ddc97",
+      "image": "assets/images/kenney.webp"
+    },
+    {
+      "name": "Poly Pizza",
+      "url": "https://poly.pizza/",
+      "group": "games",
+      "note": "Thousands of free low-poly 3D models to search and download, most of them CC0 or CC-BY.",
+      "color": "#ff6b4a"
+    },
+    {
+      "name": "Poly Haven",
+      "url": "https://polyhaven.com/",
+      "group": "games",
+      "note": "Free, high-quality HDRIs, textures and 3D models, all CC0 and ready for any project.",
+      "color": "#7fb3ff",
+      "image": "assets/images/poly-haven.webp"
+    },
+    {
+      "name": "Mixamo",
+      "url": "https://www.mixamo.com/",
+      "group": "games",
+      "note": "Adobe's free tool for rigging 3D characters and adding ready-made animations in minutes.",
+      "color": "#6c7bff",
+      "image": "assets/images/mixamo.webp"
     }
   ]
 }
