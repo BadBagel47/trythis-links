@@ -5,10 +5,12 @@ ID: `B-###` buggar · `F-###` funktioner · `D-###` planering/design. En gemensa
 ## Föreslagna körningar
 Ögonblicksbild, ersätts vid varje nytt förslag.
 
-Prioriterat för: lättare påfyllning, sedan levande innehåll
-- **A** – standardmodell, medelnivå – Snabbspara-knapp
+Prioriterat för: nytt innehåll först, sedan lättare påfyllning och levande innehåll
+- **A** – standardmodell, låg nivå – Ny kanal
+  - F-007 – Lägg till That Good News Girl i en ny grupp "Feel-good", med bild
+- **B** – standardmodell, medelnivå – Snabbspara-knapp
   - F-003 – Bokmärkesknapp som lägger till sidan du står på i listan
-- **B** – standardmodell, medelnivå – Senaste videon per kanal
+- **C** – standardmodell, medelnivå – Senaste videon per kanal
   - F-005 – Visa senaste videons bild och titel på kanalkorten, uppdateras automatiskt
 
 Parkerat: F-002 (publicering på links.trythis.one)
@@ -36,6 +38,11 @@ Parkerat: F-002 (publicering på links.trythis.one)
   - Flödet svarar ibland med fel; behåll då senast kända video.
   - Miniatyrbilden laddas ner och sparas på sidan, så att besökarna inte kontaktar Google.
   - Rättat 2026-11-26: Tom Scott är tillbaka sedan mars 2026 med en veckoserie ("Tom Scott: England", först på Nebula, en vecka senare på YouTube), så flödet ger färska videor.
+
+### F-007 Ny kanal: That Good News Girl
+- **Prioritet:** Medel
+- **Vad:** Lägg till https://www.youtube.com/@thatgoodnewsgirl/videos (Jenn Crumm, "A cozy corner of the internet for animal stories and good news", cirka 10 000 prenumeranter 2026-11-27). Passar inte befintliga grupper.
+- **Förslag:** ny grupp "Feel-good" (id `feelgood`, "Kind stories, animals and good news for a better mood.") och korttexten "Cozy animal stories and good news from around the world, a calm break from the headlines." Bild hämtas med `tools/fetch-images.py`.
 
 ## Klart
 

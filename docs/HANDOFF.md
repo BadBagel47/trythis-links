@@ -30,6 +30,9 @@ Läs den här först i varje ny session, oavsett agent. Skriv så att någon uta
 - **2026-11-26:** Sidan ligger på GitHub Pages medan den utvecklas. trythis.one och underdomänen ignoreras tills vidare (F-002 parkerad). Ägarens besked.
 - **2026-11-26:** Sidan är en länksamling med grupper av länkar, inte en "länk i bio"-sida. Först YouTube-kanaler, senare andra platser. Det är tips på saker ägaren gillar som kan intressera alla, utan profil eller annat som knyter sidan till ägaren personligen. Den ska vara snygg och strukturerad, inte bara rena länkar (ägarens besked).
 
+## Föreslagna projektregler
+- **Föreslagen 2026-11-27:** Länkar som ägaren skickar i chatten läggs in och publiceras direkt, utan separat "Kör", om agenten bara behöver välja grupp och skriva korttext. Nya grupper och allt annat följer det vanliga arbetssättet. Väntar på ägarens godkännande.
+
 ## Engångsåtgärder
 - **Klar 2026-11-26:** GitHub Pages med källa "GitHub Actions".
 - **Klar 2026-11-26:** ägaren öppnade molnmiljöns nätverk för YouTube och länkarnas sajter.
