@@ -6,8 +6,9 @@ ID: `B-###` buggar · `F-###` funktioner · `D-###` planering/design. En gemensa
 Ögonblicksbild, ersätts vid varje nytt förslag.
 
 Prioriterat för: nytt innehåll först, sedan lättare påfyllning och levande innehåll
-- **A** – standardmodell, låg nivå – Nya kanaler
+- **A** – standardmodell, låg nivå – Nya länkar
   - F-007 – Lägg till tre djur- och goda nyheter-kanaler i en ny grupp "Animals & good news", med bilder
+  - F-008 – Lägg till Excalidraw och ElevenLabs; gruppen "Design & web" byter namn till "Tools & design"
 - **B** – standardmodell, medelnivå – Snabbspara-knapp
   - F-003 – Bokmärkesknapp som lägger till sidan du står på i listan
 - **C** – standardmodell, medelnivå – Senaste videon per kanal
@@ -46,6 +47,13 @@ Parkerat: F-002 (publicering på links.trythis.one)
   - https://www.youtube.com/@GeoBeatsAnimals/videos – GeoBeats Animals: "Short, uplifting stories about people going out of their way to help animals."
   - https://www.youtube.com/@TheDodo/videos – The Dodo: "Heartwarming animal rescues and friendships, from one of the biggest animal channels on YouTube."
 - **Förslag:** ny grupp "Animals & good news" (id `animals`, "Kind people, lucky animals and stories that lift your mood."). Bilder hämtas med `tools/fetch-images.py`.
+
+### F-008 Nya verktyg: Excalidraw och ElevenLabs
+- **Prioritet:** Medel
+- **Vad:** Lägg till två länkar från ägaren (2026-11-27):
+  - https://excalidraw.com/ – Excalidraw: "A free online whiteboard for quick diagrams and sketches that look hand-drawn."
+  - https://elevenlabs.io/ – ElevenLabs: "Lifelike AI voices for text-to-speech, dubbing and voice agents, in 90+ languages."
+- **Förslag:** byt namn på gruppen "Design & web" till "Tools & design" ("Tools and references for making things, from sketches to voices.") och lägg båda där, i stället för en ny grupp med bara två länkar. Bilder hämtas med `tools/fetch-images.py`.
 
 ## Klart
 
